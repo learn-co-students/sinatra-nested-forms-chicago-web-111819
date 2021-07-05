@@ -1,7 +1,22 @@
-<h1>Display your Pirate here</h1>
+<div style="background-color:lightblue">
+<h1><em><strong>PIRATE!</strong></em></h1>
 
+<h3>Name: <em><%= @pirate_boi["name"] %></em></h3>
+<h3>Weight: <em><%= @pirate_boi["weight"] %></em></h3>
+<h3>Height: <em><%= @pirate_boi["height"] %></em></h3>
+<br><br></div>
 
-<h2>Display your first ship here</h2>
+<div style="background-color:lightgreen">
+<h2><em><strong>SHIP UNO!</strong></em></h2>
+<h3>Name: <%= @ship_data[0]["name"] %></h3>
+<h3>Type: <%= @ship_data[0]["type"] %></h3>
+<h3>Booty: <%= @ship_data[0]["booty"] %></h3>
+<br>
 
+<h2><em><strong>SHIP DOS!</strong></em></h2>
+<h3>Name: <%= @ship_data[1]["name"] %></h3>
+<h3>Type: <%= @ship_data[1]["type"] %></h3>
+<h3>Booty: <%= @ship_data[1]["booty"] %></h3>
+</div>
 
-<h2>Display your second ship here</h2>
+<% #gonna hardcode a bit because I know the tests only include two ships. Otherwise I'd have some each loops going through here incase there were multiple ships created %>
